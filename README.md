@@ -52,6 +52,18 @@ flowchart TD
     METRICS --> ARTIFACT[Persisted run artifacts<br/>manifests, CSVs, JSON digests]
 ```
 
+### Research Pipeline Architecture
+
+The diagram below provides a high-level view of the repository's major components and their relationships — from source data through processing, monitoring, policy decisions, and persisted artifacts.
+
+![Limen Core research pipeline architecture](docs/images/architecture.png)
+
+### Data Pipeline
+
+The diagram below summarizes the intended research-data flow from tick-export input through ingestion, quote reconstruction, observed bars, strategy intents, and replay evaluation.
+
+![Limen Core data pipeline flowchart](docs/images/data-pipeline.png)
+
 ## Repository structure
 
 | Path | Purpose |
