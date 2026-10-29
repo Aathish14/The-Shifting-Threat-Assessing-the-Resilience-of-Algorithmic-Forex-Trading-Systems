@@ -1,0 +1,17 @@
+{
+  "command": "python Files/run_limen.py ablation --config Files/configs/frozen_config_v1_1_1.json --run-id ablation_v1_1_1_20261028b",
+  "config_digest": "6225c2a28052f265727cbbf287cb374541d59fc86ac116cc37e38f45a9c9c463",
+  "config_version": "1.1.1",
+  "input_byte_size": 914314274,
+  "input_path": "D:\\Limen_Core\\Files\\..\\EURUSD_202603050000_202610262359.csv",
+  "input_sha256": "dfcfb7ab72ebbfb54f9babde07bfd0ba655b8e176ff40f3dde1e9f845c455771",
+  "manifest_path": "Files/artifacts/runs/ablation_v1_1_1_20261028b/run_manifest.json",
+  "output_dir": "Files/artifacts/runs/ablation_v1_1_1_20261028b",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "run_id": "ablation_v1_1_1_20261028b",
+  "seed": 12345,
+  "status": "completed",
+  "timestamp": "2026-10-28T18:05:03.284Z",
+  "variant_count": 13
+}

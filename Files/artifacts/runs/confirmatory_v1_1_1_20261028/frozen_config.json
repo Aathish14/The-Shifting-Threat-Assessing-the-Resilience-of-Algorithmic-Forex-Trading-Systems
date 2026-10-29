@@ -1,0 +1,206 @@
+{
+  "config": {
+    "ablation": {
+      "fusion_rules": [
+        "hard_reject",
+        "soft_plus_shift_pause",
+        "soft_only_delay",
+        "shift_only_caution"
+      ],
+      "min_faulted_entries": 30,
+      "signal_groups": [
+        "hard_checks",
+        "spread_outlier",
+        "price_innovation",
+        "repeated_quote",
+        "inter_arrival_gap",
+        "stale_quote",
+        "timestamp_order",
+        "shift_monitor"
+      ]
+    },
+    "bar": {
+      "gap_seconds": 60.0
+    },
+    "cusum": {
+      "allowance": 0.5,
+      "decision_limit": 5.0,
+      "reset_on_gap": true,
+      "reset_on_missing": true
+    },
+    "integrity": {
+      "enable_crossed": true,
+      "enable_gap_check": true,
+      "enable_missing": true,
+      "enable_nonpositive": true,
+      "enable_price_innovation": true,
+      "enable_repeated_quote": true,
+      "enable_spread_outlier": true,
+      "enable_stale_quote": true,
+      "enable_timestamp_order": true,
+      "innovation_quantile": 0.999,
+      "min_gap_seconds": 300.0,
+      "repeat_count_threshold": 5,
+      "spread_quantile": 0.999,
+      "stale_is_hard": true,
+      "stale_quote_seconds": 300.0
+    },
+    "ks": {
+      "check_cadence": 5,
+      "clip_abs_return": null,
+      "consecutive_alerts": 2,
+      "quantile": 0.99,
+      "recent_window": 30,
+      "reference_window": 120
+    },
+    "mad": {
+      "mad_scale": 3.0,
+      "recent_window": 30,
+      "reference_window": 120,
+      "zero_mad_fallback": "unknown"
+    },
+    "policy": {
+      "arms": [
+        "no_gate",
+        "integrity_only",
+        "shift_only",
+        "fused",
+        "matched_rate_abstention",
+        "shadow"
+      ],
+      "caution_multiplier": 0.5,
+      "disabled_rules": [],
+      "enable_shift": true,
+      "entry_only_gate": true,
+      "matched_rate_seed": 999,
+      "matched_rate_stratum_size": 50,
+      "require_aligned_intent": true
+    },
+    "quantile": {
+      "quantile_level": 0.95,
+      "recent_window": 30,
+      "reference_window": 120
+    },
+    "runtime": {
+      "fail_on_label_access": true,
+      "input_path": "D:\\Limen_Core\\Files\\..\\EURUSD_202603050000_202610262359.csv",
+      "max_rows": null,
+      "output_root": "Files\\artifacts\\runs",
+      "run_id": null,
+      "shadow_mode": false,
+      "streaming_chunk_rows": 100000
+    },
+    "scenario": {
+      "benign_volatility_duration_bars": 5,
+      "benign_volatility_multiplier": 2.0,
+      "combined_duration_bars": 3,
+      "crossed_quote_duration_bars": 1,
+      "episodes_per_fault": 8,
+      "label_isolation": true,
+      "min_faulted_entries": 30,
+      "missing_quote_duration_bars": 3,
+      "placement": "entry_anchored",
+      "recovery_window_bars": 30,
+      "return_scale_duration_bars": 5,
+      "return_scale_factor": 2.0,
+      "seed": 12345,
+      "stale_replay_duration_bars": 3,
+      "symmetric_shift_duration_bars": 3,
+      "symmetric_shift_magnitude": 0.0005
+    },
+    "sensitivity": {
+      "innovation_quantile": [
+        0.99,
+        0.999,
+        0.9999
+      ],
+      "ks_check_cadence": [
+        3,
+        5,
+        10
+      ],
+      "ks_consecutive_alerts": [
+        1,
+        2,
+        3
+      ],
+      "ks_quantile": [
+        0.95,
+        0.99,
+        0.999
+      ],
+      "ks_recent_window": [
+        20,
+        30,
+        40
+      ],
+      "ks_reference_window": [
+        90,
+        120,
+        180
+      ],
+      "min_gap_seconds": [
+        120.0,
+        300.0,
+        600.0
+      ],
+      "repeat_count_threshold": [
+        3,
+        5,
+        8
+      ],
+      "scenario_missing_quote_duration_bars": [
+        1,
+        3,
+        5
+      ],
+      "scenario_return_scale_factor": [
+        1.5,
+        2.0,
+        3.0
+      ],
+      "scenario_stale_replay_duration_bars": [
+        3,
+        10,
+        30
+      ],
+      "scenario_symmetric_shift_magnitude": [
+        0.0002,
+        0.0005,
+        0.001
+      ],
+      "spread_quantile": [
+        0.99,
+        0.999,
+        0.9999
+      ],
+      "stale_quote_seconds": [
+        60.0,
+        300.0,
+        900.0
+      ]
+    },
+    "split": {
+      "allow_uncalibrated": false,
+      "purge_bars": 0,
+      "test_end_index": null,
+      "train_end_index": 167795,
+      "validation_end_index": 191766
+    },
+    "strategy": {
+      "adjust": false,
+      "equality_tol": 0.0,
+      "fast_span": 10,
+      "intent_actionable_at_close": true,
+      "min_periods_fast": 10,
+      "min_periods_slow": 30,
+      "price_field": "midpoint",
+      "slow_span": 30
+    },
+    "version": "1.1.1"
+  },
+  "config_digest": "6225c2a28052f265727cbbf287cb374541d59fc86ac116cc37e38f45a9c9c463",
+  "config_path": "Files/configs/frozen_config_v1_1_1.json",
+  "config_version": "1.1.1",
+  "timestamp": "2026-10-28T16:28:55.759Z"
+}

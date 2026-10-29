@@ -1,0 +1,7 @@
+arm,entry_opportunities,allowed_entries,blocked_eligible_entries,cautioned_entries,abstention_rate,faulted_entry_opportunities,faulted_allowed,fault_pass_through,unmodified_entry_opportunities,unmodified_blocked,unmodified_abstention_rate,clean_intervention_rate,timestamp
+no_gate,1749,1749,0,0,0.0,55,55,1.0,1681,0,0.0,0.0,2026-10-28T16:28:54.398Z
+integrity_only,1749,1749,0,0,0.0,55,28,0.509090909090909,1681,0,0.0,0.0,2026-10-28T16:28:54.398Z
+shift_only,1749,1744,0,5,0.0,55,55,1.0,1681,0,0.0,0.0,2026-10-28T16:28:54.398Z
+fused,1749,1736,8,5,0.004574042309891366,55,28,0.509090909090909,1681,8,0.004759071980963712,0.004759071980963712,2026-10-28T16:28:54.398Z
+shadow,1749,1749,0,0,0.0,55,55,1.0,1681,0,0.0,0.0,2026-10-28T16:28:54.398Z
+matched_rate_abstention,1749,1741,8,0,0.004574042309891366,55,55,1.0,1681,8,0.004759071980963712,0.004759071980963712,2026-10-28T16:28:54.398Z

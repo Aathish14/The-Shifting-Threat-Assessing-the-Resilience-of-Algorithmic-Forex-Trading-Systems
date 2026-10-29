@@ -1,0 +1,1067 @@
+{
+  "arms": [
+    "no_gate",
+    "integrity_only",
+    "shift_only",
+    "fused",
+    "matched_rate_abstention",
+    "shadow"
+  ],
+  "calibrated": true,
+  "config_digest": "6225c2a28052f265727cbbf287cb374541d59fc86ac116cc37e38f45a9c9c463",
+  "config_version": "1.1.1",
+  "entry_opportunities": {
+    "test": 1749,
+    "train": 6305,
+    "validation": 995
+  },
+  "input_byte_size": 914314274,
+  "input_sha256": "dfcfb7ab72ebbfb54f9babde07bfd0ba655b8e176ff40f3dde1e9f845c455771",
+  "matched_rate": {
+    "entry_opportunities": 1749,
+    "fused_blocked": 8,
+    "note": "post hoc comparator: the rate is measured from the fused arm on the same test opportunities; abstentions are time-stratified and seeded",
+    "planned_abstentions": 8,
+    "realized_rate": 0.004574042309891366,
+    "source_arm": "fused",
+    "target_rate": 0.004574042309891366
+  },
+  "metrics": [
+    {
+      "aggregation": "pooled_bars",
+      "caveat": "test-range entry opportunities only",
+      "denominator": 1749,
+      "exclusions": [
+        "train_bars",
+        "validation_bars"
+      ],
+      "name": "allowed_entries_no_gate",
+      "numerator": 1749,
+      "time_basis": "test_entry_opportunity",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "count",
+      "value": 1.0
+    },
+    {
+      "aggregation": "pooled_bars",
+      "caveat": "test-range entry opportunities only",
+      "denominator": 1749,
+      "exclusions": [
+        "train_bars",
+        "validation_bars"
+      ],
+      "name": "blocked_eligible_entries_no_gate",
+      "numerator": 0,
+      "time_basis": "test_entry_opportunity",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "count",
+      "value": 0.0
+    },
+    {
+      "aggregation": "pooled_bars",
+      "caveat": "kept separate from blocked-eligible-entry count",
+      "denominator": 47942,
+      "exclusions": [],
+      "name": "intervention_burden",
+      "numerator": 0,
+      "time_basis": "pooled_bar",
+      "timestamp": "",
+      "unit": "ratio",
+      "value": 0.0
+    },
+    {
+      "aggregation": "pooled_bars",
+      "caveat": "test-range entry opportunities only",
+      "denominator": 1749,
+      "exclusions": [
+        "train_bars",
+        "validation_bars"
+      ],
+      "name": "allowed_entries_integrity_only",
+      "numerator": 1749,
+      "time_basis": "test_entry_opportunity",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "count",
+      "value": 1.0
+    },
+    {
+      "aggregation": "pooled_bars",
+      "caveat": "test-range entry opportunities only",
+      "denominator": 1749,
+      "exclusions": [
+        "train_bars",
+        "validation_bars"
+      ],
+      "name": "blocked_eligible_entries_integrity_only",
+      "numerator": 0,
+      "time_basis": "test_entry_opportunity",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "count",
+      "value": 0.0
+    },
+    {
+      "aggregation": "pooled_bars",
+      "caveat": "kept separate from blocked-eligible-entry count",
+      "denominator": 47942,
+      "exclusions": [],
+      "name": "intervention_burden",
+      "numerator": 0,
+      "time_basis": "pooled_bar",
+      "timestamp": "",
+      "unit": "ratio",
+      "value": 0.0
+    },
+    {
+      "aggregation": "pooled_bars",
+      "caveat": "test-range entry opportunities only",
+      "denominator": 1749,
+      "exclusions": [
+        "train_bars",
+        "validation_bars"
+      ],
+      "name": "allowed_entries_shift_only",
+      "numerator": 1744,
+      "time_basis": "test_entry_opportunity",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "count",
+      "value": 0.9971412235563178
+    },
+    {
+      "aggregation": "pooled_bars",
+      "caveat": "test-range entry opportunities only",
+      "denominator": 1749,
+      "exclusions": [
+        "train_bars",
+        "validation_bars"
+      ],
+      "name": "blocked_eligible_entries_shift_only",
+      "numerator": 0,
+      "time_basis": "test_entry_opportunity",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "count",
+      "value": 0.0
+    },
+    {
+      "aggregation": "pooled_bars",
+      "caveat": "kept separate from blocked-eligible-entry count",
+      "denominator": 47942,
+      "exclusions": [],
+      "name": "intervention_burden",
+      "numerator": 5,
+      "time_basis": "pooled_bar",
+      "timestamp": "",
+      "unit": "ratio",
+      "value": 0.00010429268699678778
+    },
+    {
+      "aggregation": "pooled_bars",
+      "caveat": "test-range entry opportunities only",
+      "denominator": 1749,
+      "exclusions": [
+        "train_bars",
+        "validation_bars"
+      ],
+      "name": "allowed_entries_fused",
+      "numerator": 1736,
+      "time_basis": "test_entry_opportunity",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "count",
+      "value": 0.9925671812464265
+    },
+    {
+      "aggregation": "pooled_bars",
+      "caveat": "test-range entry opportunities only",
+      "denominator": 1749,
+      "exclusions": [
+        "train_bars",
+        "validation_bars"
+      ],
+      "name": "blocked_eligible_entries_fused",
+      "numerator": 8,
+      "time_basis": "test_entry_opportunity",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "count",
+      "value": 0.004574042309891366
+    },
+    {
+      "aggregation": "pooled_bars",
+      "caveat": "kept separate from blocked-eligible-entry count",
+      "denominator": 47942,
+      "exclusions": [],
+      "name": "intervention_burden",
+      "numerator": 13,
+      "time_basis": "pooled_bar",
+      "timestamp": "",
+      "unit": "ratio",
+      "value": 0.00027116098619164825
+    },
+    {
+      "aggregation": "pooled_bars",
+      "caveat": "test-range entry opportunities only",
+      "denominator": 1749,
+      "exclusions": [
+        "train_bars",
+        "validation_bars"
+      ],
+      "name": "allowed_entries_shadow",
+      "numerator": 1749,
+      "time_basis": "test_entry_opportunity",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "count",
+      "value": 1.0
+    },
+    {
+      "aggregation": "pooled_bars",
+      "caveat": "test-range entry opportunities only",
+      "denominator": 1749,
+      "exclusions": [
+        "train_bars",
+        "validation_bars"
+      ],
+      "name": "blocked_eligible_entries_shadow",
+      "numerator": 0,
+      "time_basis": "test_entry_opportunity",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "count",
+      "value": 0.0
+    },
+    {
+      "aggregation": "pooled_bars",
+      "caveat": "kept separate from blocked-eligible-entry count",
+      "denominator": 47942,
+      "exclusions": [],
+      "name": "intervention_burden",
+      "numerator": 0,
+      "time_basis": "pooled_bar",
+      "timestamp": "",
+      "unit": "ratio",
+      "value": 0.0
+    },
+    {
+      "aggregation": "pooled_bars",
+      "caveat": "test-range entry opportunities only",
+      "denominator": 1749,
+      "exclusions": [
+        "train_bars",
+        "validation_bars"
+      ],
+      "name": "allowed_entries_matched_rate_abstention",
+      "numerator": 1741,
+      "time_basis": "test_entry_opportunity",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "count",
+      "value": 0.9954259576901087
+    },
+    {
+      "aggregation": "pooled_bars",
+      "caveat": "test-range entry opportunities only",
+      "denominator": 1749,
+      "exclusions": [
+        "train_bars",
+        "validation_bars"
+      ],
+      "name": "blocked_eligible_entries_matched_rate_abstention",
+      "numerator": 8,
+      "time_basis": "test_entry_opportunity",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "count",
+      "value": 0.004574042309891366
+    },
+    {
+      "aggregation": "pooled_bars",
+      "caveat": "kept separate from blocked-eligible-entry count",
+      "denominator": 47942,
+      "exclusions": [],
+      "name": "intervention_burden",
+      "numerator": 8,
+      "time_basis": "pooled_bar",
+      "timestamp": "",
+      "unit": "ratio",
+      "value": 0.00016686829919486046
+    },
+    {
+      "aggregation": "paired_bars",
+      "caveat": "intent divergence is not filled-trade loss",
+      "denominator": 1749,
+      "exclusions": [],
+      "name": "action_divergence",
+      "numerator": 13,
+      "time_basis": "paired_bar",
+      "timestamp": "",
+      "unit": "ratio",
+      "value": 0.007432818753573471
+    },
+    {
+      "aggregation": "episode_macro",
+      "caveat": "integrity monitor (hard or soft) within the episode window",
+      "denominator": 8,
+      "exclusions": [
+        "censored_episodes"
+      ],
+      "name": "episode_detection_recall_benign_volatility",
+      "numerator": 0,
+      "time_basis": "episode",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "ratio",
+      "value": 0.0
+    },
+    {
+      "aggregation": "episode_macro",
+      "caveat": "shift monitor alarm within the episode window",
+      "denominator": 8,
+      "exclusions": [
+        "censored_episodes"
+      ],
+      "name": "shift_episode_detection_recall_benign_volatility",
+      "numerator": 0,
+      "time_basis": "episode",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "ratio",
+      "value": 0.0
+    },
+    {
+      "aggregation": "episode_macro",
+      "caveat": "integrity or shift evidence within the episode window",
+      "denominator": 8,
+      "exclusions": [
+        "censored_episodes"
+      ],
+      "name": "episode_detection_recall_either_benign_volatility",
+      "numerator": 0,
+      "time_basis": "episode",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "ratio",
+      "value": 0.0
+    },
+    {
+      "aggregation": "pooled_bars",
+      "caveat": "bars within an episode are dependent",
+      "denominator": 40,
+      "exclusions": [],
+      "name": "fault_bar_flag_rate_benign_volatility",
+      "numerator": 0,
+      "time_basis": "pooled_bar",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "ratio",
+      "value": 0.0
+    },
+    {
+      "aggregation": "episode_macro",
+      "caveat": "missed episodes are censored, not zero-delay",
+      "denominator": 8,
+      "exclusions": [
+        "missed_censored"
+      ],
+      "name": "mean_detection_delay_bars_benign_volatility",
+      "numerator": 0,
+      "time_basis": "episode",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "observed_bars",
+      "value": null
+    },
+    {
+      "aggregation": "episode_macro",
+      "caveat": "integrity monitor (hard or soft) within the episode window",
+      "denominator": 8,
+      "exclusions": [
+        "censored_episodes"
+      ],
+      "name": "episode_detection_recall_combined_shift_and_quote",
+      "numerator": 8,
+      "time_basis": "episode",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "ratio",
+      "value": 1.0
+    },
+    {
+      "aggregation": "episode_macro",
+      "caveat": "shift monitor alarm within the episode window",
+      "denominator": 8,
+      "exclusions": [
+        "censored_episodes"
+      ],
+      "name": "shift_episode_detection_recall_combined_shift_and_quote",
+      "numerator": 0,
+      "time_basis": "episode",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "ratio",
+      "value": 0.0
+    },
+    {
+      "aggregation": "episode_macro",
+      "caveat": "integrity or shift evidence within the episode window",
+      "denominator": 8,
+      "exclusions": [
+        "censored_episodes"
+      ],
+      "name": "episode_detection_recall_either_combined_shift_and_quote",
+      "numerator": 8,
+      "time_basis": "episode",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "ratio",
+      "value": 1.0
+    },
+    {
+      "aggregation": "pooled_bars",
+      "caveat": "bars within an episode are dependent",
+      "denominator": 24,
+      "exclusions": [],
+      "name": "fault_bar_flag_rate_combined_shift_and_quote",
+      "numerator": 24,
+      "time_basis": "pooled_bar",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "ratio",
+      "value": 1.0
+    },
+    {
+      "aggregation": "episode_macro",
+      "caveat": "missed episodes are censored, not zero-delay",
+      "denominator": 8,
+      "exclusions": [
+        "missed_censored"
+      ],
+      "name": "mean_detection_delay_bars_combined_shift_and_quote",
+      "numerator": 8,
+      "time_basis": "episode",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "observed_bars",
+      "value": 1.0
+    },
+    {
+      "aggregation": "episode_macro",
+      "caveat": "integrity monitor (hard or soft) within the episode window",
+      "denominator": 8,
+      "exclusions": [
+        "censored_episodes"
+      ],
+      "name": "episode_detection_recall_crossed_quote",
+      "numerator": 7,
+      "time_basis": "episode",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "ratio",
+      "value": 0.875
+    },
+    {
+      "aggregation": "episode_macro",
+      "caveat": "shift monitor alarm within the episode window",
+      "denominator": 8,
+      "exclusions": [
+        "censored_episodes"
+      ],
+      "name": "shift_episode_detection_recall_crossed_quote",
+      "numerator": 2,
+      "time_basis": "episode",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "ratio",
+      "value": 0.25
+    },
+    {
+      "aggregation": "episode_macro",
+      "caveat": "integrity or shift evidence within the episode window",
+      "denominator": 8,
+      "exclusions": [
+        "censored_episodes"
+      ],
+      "name": "episode_detection_recall_either_crossed_quote",
+      "numerator": 7,
+      "time_basis": "episode",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "ratio",
+      "value": 0.875
+    },
+    {
+      "aggregation": "pooled_bars",
+      "caveat": "bars within an episode are dependent",
+      "denominator": 8,
+      "exclusions": [],
+      "name": "fault_bar_flag_rate_crossed_quote",
+      "numerator": 7,
+      "time_basis": "pooled_bar",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "ratio",
+      "value": 0.875
+    },
+    {
+      "aggregation": "episode_macro",
+      "caveat": "missed episodes are censored, not zero-delay",
+      "denominator": 8,
+      "exclusions": [
+        "missed_censored"
+      ],
+      "name": "mean_detection_delay_bars_crossed_quote",
+      "numerator": 7,
+      "time_basis": "episode",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "observed_bars",
+      "value": 1.0
+    },
+    {
+      "aggregation": "episode_macro",
+      "caveat": "integrity monitor (hard or soft) within the episode window",
+      "denominator": 8,
+      "exclusions": [
+        "censored_episodes"
+      ],
+      "name": "episode_detection_recall_missing_quote",
+      "numerator": 8,
+      "time_basis": "episode",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "ratio",
+      "value": 1.0
+    },
+    {
+      "aggregation": "episode_macro",
+      "caveat": "shift monitor alarm within the episode window",
+      "denominator": 8,
+      "exclusions": [
+        "censored_episodes"
+      ],
+      "name": "shift_episode_detection_recall_missing_quote",
+      "numerator": 1,
+      "time_basis": "episode",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "ratio",
+      "value": 0.125
+    },
+    {
+      "aggregation": "episode_macro",
+      "caveat": "integrity or shift evidence within the episode window",
+      "denominator": 8,
+      "exclusions": [
+        "censored_episodes"
+      ],
+      "name": "episode_detection_recall_either_missing_quote",
+      "numerator": 8,
+      "time_basis": "episode",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "ratio",
+      "value": 1.0
+    },
+    {
+      "aggregation": "pooled_bars",
+      "caveat": "bars within an episode are dependent",
+      "denominator": 24,
+      "exclusions": [],
+      "name": "fault_bar_flag_rate_missing_quote",
+      "numerator": 24,
+      "time_basis": "pooled_bar",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "ratio",
+      "value": 1.0
+    },
+    {
+      "aggregation": "episode_macro",
+      "caveat": "missed episodes are censored, not zero-delay",
+      "denominator": 8,
+      "exclusions": [
+        "missed_censored"
+      ],
+      "name": "mean_detection_delay_bars_missing_quote",
+      "numerator": 8,
+      "time_basis": "episode",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "observed_bars",
+      "value": 1.0
+    },
+    {
+      "aggregation": "episode_macro",
+      "caveat": "integrity monitor (hard or soft) within the episode window",
+      "denominator": 8,
+      "exclusions": [
+        "censored_episodes"
+      ],
+      "name": "episode_detection_recall_return_scale_shift",
+      "numerator": 1,
+      "time_basis": "episode",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "ratio",
+      "value": 0.125
+    },
+    {
+      "aggregation": "episode_macro",
+      "caveat": "shift monitor alarm within the episode window",
+      "denominator": 8,
+      "exclusions": [
+        "censored_episodes"
+      ],
+      "name": "shift_episode_detection_recall_return_scale_shift",
+      "numerator": 1,
+      "time_basis": "episode",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "ratio",
+      "value": 0.125
+    },
+    {
+      "aggregation": "episode_macro",
+      "caveat": "integrity or shift evidence within the episode window",
+      "denominator": 8,
+      "exclusions": [
+        "censored_episodes"
+      ],
+      "name": "episode_detection_recall_either_return_scale_shift",
+      "numerator": 2,
+      "time_basis": "episode",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "ratio",
+      "value": 0.25
+    },
+    {
+      "aggregation": "pooled_bars",
+      "caveat": "bars within an episode are dependent",
+      "denominator": 40,
+      "exclusions": [],
+      "name": "fault_bar_flag_rate_return_scale_shift",
+      "numerator": 0,
+      "time_basis": "pooled_bar",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "ratio",
+      "value": 0.0
+    },
+    {
+      "aggregation": "episode_macro",
+      "caveat": "missed episodes are censored, not zero-delay",
+      "denominator": 8,
+      "exclusions": [
+        "missed_censored"
+      ],
+      "name": "mean_detection_delay_bars_return_scale_shift",
+      "numerator": 1,
+      "time_basis": "episode",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "observed_bars",
+      "value": 16.0
+    },
+    {
+      "aggregation": "episode_macro",
+      "caveat": "integrity monitor (hard or soft) within the episode window",
+      "denominator": 8,
+      "exclusions": [
+        "censored_episodes"
+      ],
+      "name": "episode_detection_recall_stale_replay",
+      "numerator": 0,
+      "time_basis": "episode",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "ratio",
+      "value": 0.0
+    },
+    {
+      "aggregation": "episode_macro",
+      "caveat": "shift monitor alarm within the episode window",
+      "denominator": 8,
+      "exclusions": [
+        "censored_episodes"
+      ],
+      "name": "shift_episode_detection_recall_stale_replay",
+      "numerator": 0,
+      "time_basis": "episode",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "ratio",
+      "value": 0.0
+    },
+    {
+      "aggregation": "episode_macro",
+      "caveat": "integrity or shift evidence within the episode window",
+      "denominator": 8,
+      "exclusions": [
+        "censored_episodes"
+      ],
+      "name": "episode_detection_recall_either_stale_replay",
+      "numerator": 0,
+      "time_basis": "episode",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "ratio",
+      "value": 0.0
+    },
+    {
+      "aggregation": "pooled_bars",
+      "caveat": "bars within an episode are dependent",
+      "denominator": 24,
+      "exclusions": [],
+      "name": "fault_bar_flag_rate_stale_replay",
+      "numerator": 0,
+      "time_basis": "pooled_bar",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "ratio",
+      "value": 0.0
+    },
+    {
+      "aggregation": "episode_macro",
+      "caveat": "missed episodes are censored, not zero-delay",
+      "denominator": 8,
+      "exclusions": [
+        "missed_censored"
+      ],
+      "name": "mean_detection_delay_bars_stale_replay",
+      "numerator": 0,
+      "time_basis": "episode",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "observed_bars",
+      "value": null
+    },
+    {
+      "aggregation": "episode_macro",
+      "caveat": "integrity monitor (hard or soft) within the episode window",
+      "denominator": 8,
+      "exclusions": [
+        "censored_episodes"
+      ],
+      "name": "episode_detection_recall_symmetric_shift",
+      "numerator": 0,
+      "time_basis": "episode",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "ratio",
+      "value": 0.0
+    },
+    {
+      "aggregation": "episode_macro",
+      "caveat": "shift monitor alarm within the episode window",
+      "denominator": 8,
+      "exclusions": [
+        "censored_episodes"
+      ],
+      "name": "shift_episode_detection_recall_symmetric_shift",
+      "numerator": 0,
+      "time_basis": "episode",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "ratio",
+      "value": 0.0
+    },
+    {
+      "aggregation": "episode_macro",
+      "caveat": "integrity or shift evidence within the episode window",
+      "denominator": 8,
+      "exclusions": [
+        "censored_episodes"
+      ],
+      "name": "episode_detection_recall_either_symmetric_shift",
+      "numerator": 0,
+      "time_basis": "episode",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "ratio",
+      "value": 0.0
+    },
+    {
+      "aggregation": "pooled_bars",
+      "caveat": "bars within an episode are dependent",
+      "denominator": 24,
+      "exclusions": [],
+      "name": "fault_bar_flag_rate_symmetric_shift",
+      "numerator": 0,
+      "time_basis": "pooled_bar",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "ratio",
+      "value": 0.0
+    },
+    {
+      "aggregation": "episode_macro",
+      "caveat": "missed episodes are censored, not zero-delay",
+      "denominator": 8,
+      "exclusions": [
+        "missed_censored"
+      ],
+      "name": "mean_detection_delay_bars_symmetric_shift",
+      "numerator": 0,
+      "time_basis": "episode",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "observed_bars",
+      "value": null
+    },
+    {
+      "aggregation": "episode_micro",
+      "caveat": "benign volatility is a control, not a fault",
+      "denominator": 48,
+      "exclusions": [
+        "benign_volatility",
+        "identity"
+      ],
+      "name": "episode_detection_recall_all_faults",
+      "numerator": 25,
+      "time_basis": "episode",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "ratio",
+      "value": 0.5208333333333334
+    },
+    {
+      "aggregation": "episode",
+      "caveat": "unmodified does not mean verified fault-free; raw alert count and exposure reported separately",
+      "denominator": 47758,
+      "exclusions": [
+        "injected_fault_intervals"
+      ],
+      "name": "false_alert_burden",
+      "numerator": 56,
+      "time_basis": "eligible_clean_bar",
+      "timestamp": "",
+      "unit": "ratio",
+      "value": 0.0011725784161815821
+    },
+    {
+      "aggregation": "pooled_bars",
+      "caveat": "alert episodes counted on clean bars; raw run count also reported",
+      "denominator": 47758,
+      "exclusions": [
+        "injected_fault_intervals"
+      ],
+      "name": "false_alert_rate_per_1000_clean_bars",
+      "numerator": 56,
+      "time_basis": "pooled_bar",
+      "timestamp": "2026-10-28T16:28:54.398Z",
+      "unit": "ratio_per_1000_bars",
+      "value": 1.1725784161815822
+    }
+  ],
+  "parse_failures": 0,
+  "run_id": "confirmatory_v1_1_1_20261028",
+  "scenario": {
+    "by_class": {
+      "benign_volatility": 8,
+      "combined_shift_and_quote": 8,
+      "crossed_quote": 8,
+      "missing_quote": 8,
+      "return_scale_shift": 8,
+      "stale_replay": 8,
+      "symmetric_shift": 8
+    },
+    "episode_bars": 184,
+    "episodes": 56,
+    "labels_digest": "8a78ec9c2b24fa5158267f71af905c6e554958e25a4c4d7cf1f0ce163e9fd878",
+    "note": "intents for the mutated pass come from the clean bar series; this is the controlled counterfactual used by the pass-through metric",
+    "placement": "entry_anchored",
+    "seed": 12345,
+    "unmodified_test_bars": 47650
+  },
+  "source_audit": {
+    "active_dates": [
+      "2026.03.05",
+      "2026.03.06",
+      "2026.03.09",
+      "2026.03.10",
+      "2026.03.11",
+      "2026.03.12",
+      "2026.03.13",
+      "2026.03.16",
+      "2026.03.17",
+      "2026.03.18",
+      "2026.03.19",
+      "2026.03.20",
+      "2026.03.23",
+      "2026.03.24",
+      "2026.03.25",
+      "2026.03.26",
+      "2026.03.27",
+      "2026.03.30",
+      "2026.03.31",
+      "2026.04.01",
+      "2026.04.02",
+      "2026.04.03",
+      "2026.04.06",
+      "2026.04.07",
+      "2026.04.08",
+      "2026.04.09",
+      "2026.04.10",
+      "2026.04.13",
+      "2026.04.14",
+      "2026.04.15",
+      "2026.04.16",
+      "2026.04.17",
+      "2026.04.20",
+      "2026.04.21",
+      "2026.04.22",
+      "2026.04.23",
+      "2026.04.24",
+      "2026.04.27",
+      "2026.04.28",
+      "2026.04.29",
+      "2026.04.30",
+      "2026.05.01",
+      "2026.05.04",
+      "2026.05.05",
+      "2026.05.06",
+      "2026.05.07",
+      "2026.05.08",
+      "2026.05.11",
+      "2026.05.12",
+      "2026.05.13",
+      "2026.05.14",
+      "2026.05.15",
+      "2026.05.18",
+      "2026.05.19",
+      "2026.05.20",
+      "2026.05.21",
+      "2026.05.22",
+      "2026.05.25",
+      "2026.05.26",
+      "2026.05.27",
+      "2026.05.28",
+      "2026.05.29",
+      "2026.06.01",
+      "2026.06.02",
+      "2026.06.03",
+      "2026.06.04",
+      "2026.06.05",
+      "2026.06.08",
+      "2026.06.09",
+      "2026.06.10",
+      "2026.06.11",
+      "2026.06.12",
+      "2026.06.15",
+      "2026.06.16",
+      "2026.06.17",
+      "2026.06.18",
+      "2026.06.19",
+      "2026.06.22",
+      "2026.06.23",
+      "2026.06.24",
+      "2026.06.25",
+      "2026.06.26",
+      "2026.06.29",
+      "2026.06.30",
+      "2026.07.01",
+      "2026.07.02",
+      "2026.07.03",
+      "2026.07.06",
+      "2026.07.07",
+      "2026.07.08",
+      "2026.07.09",
+      "2026.07.10",
+      "2026.07.13",
+      "2026.07.14",
+      "2026.07.15",
+      "2026.07.16",
+      "2026.07.17",
+      "2026.07.20",
+      "2026.07.21",
+      "2026.07.22",
+      "2026.07.23",
+      "2026.07.24",
+      "2026.07.27",
+      "2026.07.28",
+      "2026.07.29",
+      "2026.07.30",
+      "2026.07.31",
+      "2026.08.03",
+      "2026.08.04",
+      "2026.08.05",
+      "2026.08.06",
+      "2026.08.07",
+      "2026.08.10",
+      "2026.08.11",
+      "2026.08.12",
+      "2026.08.13",
+      "2026.08.14",
+      "2026.08.17",
+      "2026.08.18",
+      "2026.08.19",
+      "2026.08.20",
+      "2026.08.21",
+      "2026.08.24",
+      "2026.08.25",
+      "2026.08.26",
+      "2026.08.27",
+      "2026.08.28",
+      "2026.08.31",
+      "2026.09.01",
+      "2026.09.02",
+      "2026.09.03",
+      "2026.09.04",
+      "2026.09.07",
+      "2026.09.08",
+      "2026.09.09",
+      "2026.09.10",
+      "2026.09.11",
+      "2026.09.14",
+      "2026.09.15",
+      "2026.09.16",
+      "2026.09.17",
+      "2026.09.18",
+      "2026.09.21",
+      "2026.09.22",
+      "2026.09.23",
+      "2026.09.24",
+      "2026.09.25",
+      "2026.09.28",
+      "2026.09.29",
+      "2026.09.30",
+      "2026.10.01",
+      "2026.10.02",
+      "2026.10.05",
+      "2026.10.06",
+      "2026.10.07",
+      "2026.10.08",
+      "2026.10.09",
+      "2026.10.12",
+      "2026.10.13",
+      "2026.10.14",
+      "2026.10.15",
+      "2026.10.16",
+      "2026.10.19",
+      "2026.10.20",
+      "2026.10.21",
+      "2026.10.22",
+      "2026.10.23",
+      "2026.10.26"
+    ],
+    "ask_nonpositive": 0,
+    "backward_count": 0,
+    "bid_nonpositive": 0,
+    "byte_size": 914314274,
+    "column_count": 7,
+    "crossed_quotes": 0,
+    "delimiter": "\\t",
+    "duplicate_rows": 0,
+    "encoding": "utf-8",
+    "equal_adjacent_count": 73969,
+    "first_timestamp": "2026.03.05 00:00:10.657",
+    "flag_value_counts": {
+      "2": 5601460,
+      "4": 5647236,
+      "6": 10819195
+    },
+    "header": [
+      "<DATE>",
+      "<TIME>",
+      "<BID>",
+      "<ASK>",
+      "<LAST>",
+      "<VOLUME>",
+      "<FLAGS>"
+    ],
+    "last_timestamp": "2026.10.26 23:59:57.138",
+    "missing_values_by_column": {
+      "<ASK>": 5601460,
+      "<BID>": 5647236,
+      "<DATE>": 0,
+      "<FLAGS>": 0,
+      "<LAST>": 22067891,
+      "<TIME>": 0,
+      "<VOLUME>": 22067891
+    },
+    "notes": [
+      "Timestamps preserved exactly as exported; no conversion applied.",
+      "FLAGS bits: 2=bid updated, 4=ask updated (current adapter contract).",
+      "crossed_quotes / bid_nonpositive / ask_nonpositive are counted on the reconstructed carry-forward state, identical to the runtime path."
+    ],
+    "ordering": "nondecreasing",
+    "parse_failures": 0,
+    "path": "D:\\Limen_Core\\Files\\..\\EURUSD_202603050000_202610262359.csv",
+    "sha256": "dfcfb7ab72ebbfb54f9babde07bfd0ba655b8e176ff40f3dde1e9f845c455771",
+    "timestamp": "2026-10-28T16:28:33.787Z",
+    "timestamp_basis": "raw_export_unverified",
+    "total_rows": 22067891
+  },
+  "status": "completed",
+  "test_bars": 47942,
+  "thresholds": {
+    "innovation": 0.0007294255673244042,
+    "ks": 0.4833333333333334,
+    "ks_rule": "quantile of causal KS statistics observed on the validation range, using the same reference/recent windows, check cadence, and consecutive-alert rule as evaluation",
+    "ks_scores_used": 4794,
+    "spread": 0.0008799999999999919
+  },
+  "timestamp": "2026-10-28T16:28:54.398Z",
+  "total_observed_bars": 239708,
+  "total_source_rows": 22067891,
+  "train_bars": 167795,
+  "validation_bars": 23971
+}

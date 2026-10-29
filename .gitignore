@@ -1,0 +1,56 @@
+﻿# Secrets and local environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+credentials/
+
+# Python-generated files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Editors and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+temp/
+tmp/
+
+# Local databases
+*.sqlite
+*.sqlite3
+*.db
+
+# Local archives and backups — keep the source files, not backup bundles
+*.zip
+*.7z
+*.rar
+
+# The large raw EUR/USD source dataset; retain its metadata and checksum in documentation
+/EURUSD_202603050000_202610262359.csv
+
+# Large generated per-bar outputs; retain locally
+**/bar_signals.csv
+
+# Local document assembly workspace
+/.docparts/

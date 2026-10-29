@@ -1,0 +1,237 @@
+{
+  "strategy": {
+    "fast_span": 10,
+    "slow_span": 30,
+    "price_field": "midpoint",
+    "min_periods_fast": 10,
+    "min_periods_slow": 30,
+    "adjust": false,
+    "equality_tol": 0.0,
+    "intent_actionable_at_close": true
+  },
+  "split": {
+    "train_end_index": 167795,
+    "validation_end_index": 191766,
+    "test_end_index": null,
+    "purge_bars": 0,
+    "allow_uncalibrated": false
+  },
+  "bar": {
+    "gap_seconds": 60.0
+  },
+  "integrity": {
+    "spread_quantile": 0.999,
+    "innovation_quantile": 0.999,
+    "min_gap_seconds": 300.0,
+    "repeat_count_threshold": 5,
+    "enable_spread_outlier": true,
+    "enable_price_innovation": true,
+    "enable_repeated_quote": true,
+    "enable_gap_check": true,
+    "enable_crossed": true,
+    "enable_nonpositive": true,
+    "enable_missing": true,
+    "stale_quote_seconds": 300.0,
+    "enable_stale_quote": true,
+    "stale_is_hard": true,
+    "enable_timestamp_order": true
+  },
+  "ks": {
+    "reference_window": 120,
+    "recent_window": 30,
+    "check_cadence": 5,
+    "consecutive_alerts": 2,
+    "quantile": 0.99,
+    "clip_abs_return": null
+  },
+  "cusum": {
+    "allowance": 0.5,
+    "decision_limit": 5.0,
+    "reset_on_gap": true,
+    "reset_on_missing": true
+  },
+  "quantile": {
+    "quantile_level": 0.95,
+    "reference_window": 120,
+    "recent_window": 30
+  },
+  "mad": {
+    "reference_window": 120,
+    "recent_window": 30,
+    "mad_scale": 3.0,
+    "zero_mad_fallback": "unknown"
+  },
+  "scenario": {
+    "seed": 12345,
+    "missing_quote_duration_bars": 3,
+    "stale_replay_duration_bars": 3,
+    "crossed_quote_duration_bars": 1,
+    "symmetric_shift_duration_bars": 3,
+    "return_scale_duration_bars": 5,
+    "benign_volatility_duration_bars": 5,
+    "combined_duration_bars": 3,
+    "symmetric_shift_magnitude": 0.0005,
+    "return_scale_factor": 2.0,
+    "benign_volatility_multiplier": 2.0,
+    "episodes_per_fault": 8,
+    "recovery_window_bars": 30,
+    "placement": "entry_anchored",
+    "min_faulted_entries": 30,
+    "label_isolation": true
+  },
+  "policy": {
+    "arms": [
+      "no_gate",
+      "integrity_only",
+      "shift_only",
+      "fused",
+      "matched_rate_abstention",
+      "shadow"
+    ],
+    "caution_multiplier": 0.5,
+    "matched_rate_seed": 999,
+    "matched_rate_stratum_size": 50,
+    "entry_only_gate": true,
+    "require_aligned_intent": true,
+    "enable_shift": true,
+    "disabled_rules": []
+  },
+  "ablation": {
+    "signal_groups": [
+      "hard_checks",
+      "spread_outlier",
+      "price_innovation",
+      "repeated_quote",
+      "inter_arrival_gap",
+      "stale_quote",
+      "timestamp_order",
+      "shift_monitor"
+    ],
+    "fusion_rules": [
+      "hard_reject",
+      "soft_plus_shift_pause",
+      "soft_only_delay",
+      "shift_only_caution"
+    ],
+    "min_faulted_entries": 30
+  },
+  "sensitivity": {
+    "spread_quantile": [
+      0.99,
+      0.999,
+      0.9999
+    ],
+    "innovation_quantile": [
+      0.99,
+      0.999,
+      0.9999
+    ],
+    "repeat_count_threshold": [
+      3,
+      5,
+      8
+    ],
+    "min_gap_seconds": [
+      120.0,
+      300.0,
+      600.0
+    ],
+    "stale_quote_seconds": [
+      60.0,
+      300.0,
+      900.0
+    ],
+    "ks_reference_window": [
+      90,
+      120,
+      180
+    ],
+    "ks_recent_window": [
+      20,
+      30,
+      40
+    ],
+    "ks_check_cadence": [
+      3,
+      5,
+      10
+    ],
+    "ks_consecutive_alerts": [
+      1,
+      2,
+      3
+    ],
+    "ks_quantile": [
+      0.95,
+      0.99,
+      0.999
+    ],
+    "scenario_missing_quote_duration_bars": [
+      1,
+      3,
+      5
+    ],
+    "scenario_stale_replay_duration_bars": [
+      3,
+      10,
+      30
+    ],
+    "scenario_symmetric_shift_magnitude": [
+      0.0002,
+      0.0005,
+      0.001
+    ],
+    "scenario_return_scale_factor": [
+      1.5,
+      2.0,
+      3.0
+    ]
+  },
+  "runtime": {
+    "input_path": "..\\EURUSD_202603050000_202610262359.csv",
+    "max_rows": null,
+    "streaming_chunk_rows": 100000,
+    "run_id": null,
+    "output_root": "Files\\artifacts\\runs",
+    "shadow_mode": false,
+    "fail_on_label_access": true
+  },
+  "version": "1.1.1",
+  "frozen_at": "2026-10-28T16:17:55.000Z",
+  "frozen_by": "owner_authorization_confirmed",
+  "holdout_status": "locked_confirmatory",
+  "holdout_selection": "latest_20_percent_chronological",
+  "holdout_unseen": true,
+  "data_rights_confirmed": true,
+  "date_range_confirmed": "observed_5Mar_26Oct_2026",
+  "split_metadata": {
+    "total_source_rows": 22067891,
+    "total_bars": 239708,
+    "train_bars": 167795,
+    "validation_bars": 23971,
+    "test_bars": 47942,
+    "train_pct": 70.0,
+    "validation_pct": 10.0,
+    "test_pct": 20.0,
+    "train_range": [
+      "2026.03.05 00:00:10.657",
+      "2026.08.17 13:43:59.498"
+    ],
+    "validation_range": [
+      "2026.08.17 13:44:59.494",
+      "2026.09.09 10:18:57.796"
+    ],
+    "test_range": [
+      "2026.09.09 10:19:59.795",
+      "2026.10.26 23:59:57.138"
+    ],
+    "split_method": "chronological_70_10_20",
+    "split_basis": "observed_bar_index",
+    "verified_by_run": "confirmatory_v1_1_20261028",
+    "verified_test_bar_id_range": [
+      191766,
+      239707
+    ],
+    "unchanged_from": "1.0.1 (identical bar count, boundaries, and test range)"
+  }
+}

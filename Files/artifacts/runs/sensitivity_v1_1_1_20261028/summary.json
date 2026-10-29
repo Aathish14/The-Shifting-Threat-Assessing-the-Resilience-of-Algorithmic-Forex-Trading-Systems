@@ -1,0 +1,183 @@
+{
+  "config_digest": "6225c2a28052f265727cbbf287cb374541d59fc86ac116cc37e38f45a9c9c463",
+  "config_version": "1.1.1",
+  "distinct_configs": 29,
+  "experiment_count": 42,
+  "guards": {
+    "ledger_mode": "append_only",
+    "reference_row_is_a_rerun_not_a_stored_number": true,
+    "split_frozen_across_variants": true,
+    "thresholds_fitted_on_train_and_validation_only": true
+  },
+  "input_byte_size": 914314274,
+  "input_sha256": "dfcfb7ab72ebbfb54f9babde07bfd0ba655b8e176ff40f3dde1e9f845c455771",
+  "notes": [
+    "one parameter changes per row; every other field is identical",
+    "min_gap_seconds and stale_quote_seconds change the bar series and therefore trigger a re-ingest; all other sweeps reuse the bars",
+    "the frozen value is included as an explicit reference row",
+    "this is a descriptive sweep on a single EURUSD sample: it shows local stability, not statistical significance"
+  ],
+  "parameters": {
+    "innovation_quantile": {
+      "experiments_per_parameter": 3,
+      "has_reference": true,
+      "max_abs_blocked_delta": 22,
+      "max_abs_pass_through_delta": 0.21818181818181814,
+      "values": [
+        0.99,
+        0.999,
+        0.9999
+      ]
+    },
+    "ks_check_cadence": {
+      "experiments_per_parameter": 3,
+      "has_reference": true,
+      "max_abs_blocked_delta": 0,
+      "max_abs_pass_through_delta": 0.0,
+      "values": [
+        10,
+        3,
+        5
+      ]
+    },
+    "ks_consecutive_alerts": {
+      "experiments_per_parameter": 3,
+      "has_reference": true,
+      "max_abs_blocked_delta": 0,
+      "max_abs_pass_through_delta": 0.0,
+      "values": [
+        1,
+        2,
+        3
+      ]
+    },
+    "ks_quantile": {
+      "experiments_per_parameter": 3,
+      "has_reference": true,
+      "max_abs_blocked_delta": 0,
+      "max_abs_pass_through_delta": 0.0,
+      "values": [
+        0.95,
+        0.99,
+        0.999
+      ]
+    },
+    "ks_recent_window": {
+      "experiments_per_parameter": 3,
+      "has_reference": true,
+      "max_abs_blocked_delta": 0,
+      "max_abs_pass_through_delta": 0.0,
+      "values": [
+        20,
+        30,
+        40
+      ]
+    },
+    "ks_reference_window": {
+      "experiments_per_parameter": 3,
+      "has_reference": true,
+      "max_abs_blocked_delta": 0,
+      "max_abs_pass_through_delta": 0.0,
+      "values": [
+        120,
+        180,
+        90
+      ]
+    },
+    "min_gap_seconds": {
+      "experiments_per_parameter": 3,
+      "has_reference": true,
+      "max_abs_blocked_delta": 7,
+      "max_abs_pass_through_delta": 0.0,
+      "values": [
+        120.0,
+        300.0,
+        600.0
+      ]
+    },
+    "repeat_count_threshold": {
+      "experiments_per_parameter": 3,
+      "has_reference": true,
+      "max_abs_blocked_delta": 5,
+      "max_abs_pass_through_delta": 0.018181818181818132,
+      "values": [
+        3,
+        5,
+        8
+      ]
+    },
+    "scenario_missing_quote_duration_bars": {
+      "experiments_per_parameter": 3,
+      "has_reference": true,
+      "max_abs_blocked_delta": 0,
+      "max_abs_pass_through_delta": 0.019210977701543785,
+      "values": [
+        1,
+        3,
+        5
+      ]
+    },
+    "scenario_return_scale_factor": {
+      "experiments_per_parameter": 3,
+      "has_reference": true,
+      "max_abs_blocked_delta": 0,
+      "max_abs_pass_through_delta": 0.018181818181818132,
+      "values": [
+        1.5,
+        2.0,
+        3.0
+      ]
+    },
+    "scenario_stale_replay_duration_bars": {
+      "experiments_per_parameter": 3,
+      "has_reference": true,
+      "max_abs_blocked_delta": 0,
+      "max_abs_pass_through_delta": 0.09732620320855612,
+      "values": [
+        10,
+        3,
+        30
+      ]
+    },
+    "scenario_symmetric_shift_magnitude": {
+      "experiments_per_parameter": 3,
+      "has_reference": true,
+      "max_abs_blocked_delta": 0,
+      "max_abs_pass_through_delta": 0.1272727272727272,
+      "values": [
+        0.0002,
+        0.0005,
+        0.001
+      ]
+    },
+    "spread_quantile": {
+      "experiments_per_parameter": 3,
+      "has_reference": true,
+      "max_abs_blocked_delta": 15,
+      "max_abs_pass_through_delta": 0.0,
+      "values": [
+        0.99,
+        0.999,
+        0.9999
+      ]
+    },
+    "stale_quote_seconds": {
+      "experiments_per_parameter": 3,
+      "has_reference": true,
+      "max_abs_blocked_delta": 0,
+      "max_abs_pass_through_delta": 0.1454545454545454,
+      "values": [
+        300.0,
+        60.0,
+        900.0
+      ]
+    }
+  },
+  "run_id": "sensitivity_v1_1_1_20261028",
+  "status": "completed",
+  "test_bars": 47942,
+  "timestamp": "2026-10-28T18:07:08.689Z",
+  "total_observed_bars": 239708,
+  "train_bars": 167795,
+  "validation_bars": 23971
+}

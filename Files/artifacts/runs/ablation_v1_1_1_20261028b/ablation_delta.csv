@@ -1,0 +1,14 @@
+variant,kind,detail,blocked_delta,fault_pass_through_delta,false_alert_rate_delta,detection_recall_delta,abstention_rate_delta,timestamp
+base,base,frozen configuration,0,0.0,0.0,0.0,0.0,2026-10-28T18:05:02.267Z
+signal:hard_checks,signal_group,hard_checks,0,0.49090909090909096,0.0,0.0,0.0,2026-10-28T18:05:02.267Z
+signal:spread_outlier,signal_group,spread_outlier,0,0.0,-0.04187780057791368,0.0,0.0,2026-10-28T18:05:02.267Z
+signal:price_innovation,signal_group,price_innovation,-5,0.0,-0.46065580635705017,0.0,-0.002858776443682104,2026-10-28T18:05:02.267Z
+signal:repeated_quote,signal_group,repeated_quote,0,0.0,-0.2722057037564388,0.0,0.0,2026-10-28T18:05:02.267Z
+signal:inter_arrival_gap,signal_group,inter_arrival_gap,-2,0.0,-0.29314460404539555,0.0,-0.0011435105774728416,2026-10-28T18:05:02.267Z
+signal:stale_quote,signal_group,stale_quote,0,0.0,0.0,0.0,0.0,2026-10-28T18:05:02.267Z
+signal:shift_monitor,signal_group,shift_monitor,0,0.0,0.0,0.0,0.0,2026-10-28T18:05:02.267Z
+signal:timestamp_order,signal_group,timestamp_order,0,0.0,0.0,0.0,0.0,2026-10-28T18:05:02.267Z
+rule:hard_reject,fusion_rule,hard_reject,0,0.49090909090909096,0.0,0.0,0.0,2026-10-28T18:05:02.267Z
+rule:soft_plus_shift_pause,fusion_rule,soft_plus_shift_pause,0,0.0,0.0,0.0,0.0,2026-10-28T18:05:02.267Z
+rule:soft_only_delay,fusion_rule,soft_only_delay,-8,0.0,0.0,0.0,-0.004574042309891366,2026-10-28T18:05:02.267Z
+rule:shift_only_caution,fusion_rule,shift_only_caution,0,0.0,0.0,0.0,0.0,2026-10-28T18:05:02.267Z

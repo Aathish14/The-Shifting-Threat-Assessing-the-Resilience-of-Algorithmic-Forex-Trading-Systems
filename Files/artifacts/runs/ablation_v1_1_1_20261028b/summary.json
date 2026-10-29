@@ -1,0 +1,201 @@
+{
+  "config_digest": "6225c2a28052f265727cbbf287cb374541d59fc86ac116cc37e38f45a9c9c463",
+  "config_version": "1.1.1",
+  "entry_opportunities": 1749,
+  "episode_bars": 184,
+  "episodes": 56,
+  "episodes_by_class": {
+    "benign_volatility": 8,
+    "combined_shift_and_quote": 8,
+    "crossed_quote": 8,
+    "missing_quote": 8,
+    "return_scale_shift": 8,
+    "stale_replay": 8,
+    "symmetric_shift": 8
+  },
+  "faulted_entry_opportunities": 55,
+  "faulted_episode_bars": 144,
+  "input_byte_size": 914314274,
+  "input_sha256": "dfcfb7ab72ebbfb54f9babde07bfd0ba655b8e176ff40f3dde1e9f845c455771",
+  "labels_digest": "76aa9e25e7b1e721f40261822b77f062e726595f7dd785dcc4397fcab4f84565",
+  "labels_identical_across_variants": true,
+  "notes": [
+    "every variant shares the reference intent stream; the entry opportunity count is asserted equal across variants",
+    "ablation removes one signal source or one fusion rule at a time",
+    "thresholds are re-fitted per variant on train/validation only",
+    "the timestamp_order variant requires a re-ingest because the check runs during tick reconstruction"
+  ],
+  "run_id": "ablation_v1_1_1_20261028b",
+  "small_sample": {
+    "below_minimum": false,
+    "caveat": "pass-through is a ratio over faulted entry opportunities; below the configured minimum it is descriptive only",
+    "min_faulted_entries": 30,
+    "observed_faulted_entries": 55
+  },
+  "status": "completed",
+  "test_bars": 47942,
+  "timestamp": "2026-10-28T18:05:02.267Z",
+  "total_observed_bars": 239708,
+  "train_bars": 167795,
+  "unmodified_test_bars": 47650,
+  "validation_bars": 23971,
+  "variant_count": 13,
+  "variants": [
+    {
+      "detail": "frozen configuration",
+      "ingest_signature_changed": false,
+      "kind": "base",
+      "thresholds": {
+        "innovation": 0.0007294255673244042,
+        "ks": 0.4833333333333334,
+        "ks_scores_used": 4794,
+        "spread": 0.0008799999999999919
+      },
+      "variant": "base"
+    },
+    {
+      "detail": "hard_checks",
+      "ingest_signature_changed": false,
+      "kind": "signal_group",
+      "thresholds": {
+        "innovation": 0.0007294255673244042,
+        "ks": 0.4833333333333334,
+        "ks_scores_used": 4794,
+        "spread": 0.0008799999999999919
+      },
+      "variant": "signal:hard_checks"
+    },
+    {
+      "detail": "spread_outlier",
+      "ingest_signature_changed": false,
+      "kind": "signal_group",
+      "thresholds": {
+        "innovation": 0.0007294255673244042,
+        "ks": 0.4833333333333334,
+        "ks_scores_used": 4794,
+        "spread": 0.0008799999999999919
+      },
+      "variant": "signal:spread_outlier"
+    },
+    {
+      "detail": "price_innovation",
+      "ingest_signature_changed": false,
+      "kind": "signal_group",
+      "thresholds": {
+        "innovation": 0.0007294255673244042,
+        "ks": 0.4833333333333334,
+        "ks_scores_used": 4794,
+        "spread": 0.0008799999999999919
+      },
+      "variant": "signal:price_innovation"
+    },
+    {
+      "detail": "repeated_quote",
+      "ingest_signature_changed": false,
+      "kind": "signal_group",
+      "thresholds": {
+        "innovation": 0.0007294255673244042,
+        "ks": 0.4833333333333334,
+        "ks_scores_used": 4794,
+        "spread": 0.0008799999999999919
+      },
+      "variant": "signal:repeated_quote"
+    },
+    {
+      "detail": "inter_arrival_gap",
+      "ingest_signature_changed": false,
+      "kind": "signal_group",
+      "thresholds": {
+        "innovation": 0.0007294255673244042,
+        "ks": 0.4833333333333334,
+        "ks_scores_used": 4794,
+        "spread": 0.0008799999999999919
+      },
+      "variant": "signal:inter_arrival_gap"
+    },
+    {
+      "detail": "stale_quote",
+      "ingest_signature_changed": true,
+      "kind": "signal_group",
+      "thresholds": {
+        "innovation": 0.0007294255673244042,
+        "ks": 0.4833333333333334,
+        "ks_scores_used": 4794,
+        "spread": 0.0008799999999999919
+      },
+      "variant": "signal:stale_quote"
+    },
+    {
+      "detail": "shift_monitor",
+      "ingest_signature_changed": false,
+      "kind": "signal_group",
+      "thresholds": {
+        "innovation": 0.0007294255673244042,
+        "ks": 0.4833333333333334,
+        "ks_scores_used": 4794,
+        "spread": 0.0008799999999999919
+      },
+      "variant": "signal:shift_monitor"
+    },
+    {
+      "detail": "timestamp_order",
+      "ingest_signature_changed": true,
+      "kind": "signal_group",
+      "thresholds": {
+        "innovation": 0.0007294255673244042,
+        "ks": 0.4833333333333334,
+        "ks_scores_used": 4794,
+        "spread": 0.0008799999999999919
+      },
+      "variant": "signal:timestamp_order"
+    },
+    {
+      "detail": "hard_reject",
+      "ingest_signature_changed": false,
+      "kind": "fusion_rule",
+      "thresholds": {
+        "innovation": 0.0007294255673244042,
+        "ks": 0.4833333333333334,
+        "ks_scores_used": 4794,
+        "spread": 0.0008799999999999919
+      },
+      "variant": "rule:hard_reject"
+    },
+    {
+      "detail": "soft_plus_shift_pause",
+      "ingest_signature_changed": false,
+      "kind": "fusion_rule",
+      "thresholds": {
+        "innovation": 0.0007294255673244042,
+        "ks": 0.4833333333333334,
+        "ks_scores_used": 4794,
+        "spread": 0.0008799999999999919
+      },
+      "variant": "rule:soft_plus_shift_pause"
+    },
+    {
+      "detail": "soft_only_delay",
+      "ingest_signature_changed": false,
+      "kind": "fusion_rule",
+      "thresholds": {
+        "innovation": 0.0007294255673244042,
+        "ks": 0.4833333333333334,
+        "ks_scores_used": 4794,
+        "spread": 0.0008799999999999919
+      },
+      "variant": "rule:soft_only_delay"
+    },
+    {
+      "detail": "shift_only_caution",
+      "ingest_signature_changed": false,
+      "kind": "fusion_rule",
+      "thresholds": {
+        "innovation": 0.0007294255673244042,
+        "ks": 0.4833333333333334,
+        "ks_scores_used": 4794,
+        "spread": 0.0008799999999999919
+      },
+      "variant": "rule:shift_only_caution"
+    }
+  ]
+}
